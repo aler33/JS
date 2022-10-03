@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+Необходимо реализовать четыре функции, каждая функция должна принимать по два
+числа и выполнять одну из операций (каждая функция выполняет одну из них):
+1. Сложение
+2. Разность
+3. Умножение
+4. Деление
+
+Необходимо сделать так, чтобы функция вернула число, например выражение
+`console.log(sum(2, 6));` должно вывести число 8 в консоль (sum - функция
+сложения в данном примере, ваши названия функций могут отличаться).
+
+Округлять значения, которые возвращают функции не нужно, однако, обратите
+внимание на разность, функция должна вычесть из большего числа меньшее, либо
+вернуть 0, если числа равны.
+
+Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать
+не нужно.
+
+Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+-->
+  <script>
+    "use strict";
+
+    /**
+    * Сложение двух чисел
+    * @param {number} numb1 - Первое число
+    * @param {number} numb2 - Второе число
+    */
+    function getsum(numb1, numb2) {
+      return numb1 + numb2;
+    }
+
+    /**
+    * Вычитание одного числа из другого
+    * @param {number} numb1 - Первое число
+    * @param {number} numb2 - Второе число
+    */
+    function getsubtr(numb1, numb2) {
+      if (numb1 > numb2) {
+        return numb1 - numb2;
+      } else {
+        return numb2 - numb1;
+      }
+    }
+
+    /**
+    * Умножение двух чисел
+    * @param {number} numb1 - Первое число
+    * @param {number} numb2 - Второе число
+    */
+    function getmult(numb1, numb2) {
+      return numb1 * numb2;
+    }
+
+    /**
+    * Деление одного числа на другое
+    * @param {number} numb1 - Первое число
+    * @param {number} numb2 - Второе число
+    */
+    function getdiv(numb1, numb2) {
+      return numb1 / numb2;
+    }
+
+    console.log(getsum(2, 6));
+    console.log(getsubtr(2, 6));
+    console.log(getmult(2, 6));
+    console.log(getdiv(2, 6));
+
+  </script>
+</body>
+
+</html>
